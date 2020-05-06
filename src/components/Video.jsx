@@ -28,8 +28,10 @@ const Iframe = styled.iframe`
 `;
 
 let Video = (props) => (
-  <Flex>
-    <Wrapper>
+  <div>
+    <h2>{props.id}</h2>
+    <Flex>
+      <Wrapper>
         <Iframe
           src={props.src}
           frameBorder="0"
@@ -37,8 +39,9 @@ let Video = (props) => (
           allowFullScreen
           title=" 1"
         />
-    </Wrapper>
-  </Flex>
+      </Wrapper>
+    </Flex>
+  </div>
 );
 
 export default Video;

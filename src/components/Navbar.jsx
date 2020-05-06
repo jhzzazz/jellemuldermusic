@@ -11,14 +11,14 @@ const Wrapper = styled.div`
   top: 0em;
   z-index: 1;
   /* appearence */
-  background: #ffffffdd;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background: ${data.colors.mist};
+
 `;
 const Title = styled.div`
   font-family:  ${data.fonts.prim};
-  font-size: 1.5rem;
-  padding: 0.6rem;
+  top:10px;
+  font-size: 2rem;
+  padding: .5rem;
 `;
 
 export let Navbar = (props) => (

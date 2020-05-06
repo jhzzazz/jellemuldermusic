@@ -10,17 +10,16 @@ const MenuButton = styled.button`
   right: 5%;
   height: 60px;
   width: 60px;
-  border-radius: 50%;
   background-position: center;
-  background-color: ${data.colors.thickmist};
+  background-color: ${data.colors.mist};
 `;
 
 const MenuList = styled.ul`
   width: 80%;
   max-width: 600px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
-  border: 1px solid ${data.colors.tert};
+  /* border: 1px solid ${data.colors.tert}; */
   position: fixed;
   left: 50%;
   top: 62%;
@@ -35,10 +34,10 @@ const MenuItem = styled.li`
   transition-delay: 0.1s;
   text-align: center;
   font-size: 1rem;
-  line-height: 2;
-  text-decoration: underline;
+  line-height: 1;
+  /* text-decoration: underline;   */
   color: ${data.colors.black};
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: 1;
   font-family: ${data.fonts.prim};
 `;
@@ -100,7 +99,7 @@ export let Menu = () => {
           to={data.titles.section3}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-120}
           duration={300}
           onClick={toggle}
         >
@@ -111,11 +110,22 @@ export let Menu = () => {
           to={data.titles.section4}
           spy={true}
           smooth={true}
-          offset={100}
+          offset={-380}
           duration={300}
           onClick={toggle}
         >
           <MenuItem className="link">{data.titles.section4}</MenuItem>
+        </Link>
+        <Link
+          activeClass="active"
+          to={data.titles.section5}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={300}
+          onClick={toggle}
+        >
+          <MenuItem className="link">{data.titles.section5}</MenuItem>
         </Link>
       </MenuList>
 

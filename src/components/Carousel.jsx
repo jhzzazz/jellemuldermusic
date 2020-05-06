@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { data } from "../data/data";
-import ProjectComponent from "./ProjectComponent";
+// import { data } from "../data/data";
+// import ProjectComponent from "./ProjectComponent";
+import Spotify from "./utility_components/Spotify";
+import { Dots } from "./Icons";
 
 // Styles
 const Wrapper = styled.div`
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -30,26 +32,16 @@ const CarouselButton = styled.button`
   border: none;
   outline: none;
 `;
+let Flex = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 // Data
-function Carousel(props) {
+export function Carousel(props) {
   let carouselArray = [
-    <ProjectComponent
-      img="/img/Headshot.jpg"
-      name="Voorbeeldpersoon"
-      job="baan...?"
-      discipline="Multidisciplinair"
-      about="basgitarist met passie voor basmuziek"
-      description="    Lorem ipsum dolor "
-    />,
-    <ProjectComponent
-      img="/img/Logo.png"
-      name="Mendie Devine"
-      job="Entrepeneur"
-      discipline="Multidisciplinair"
-      about="Avp'er in Hart en nieren"
-      description="    Lorem ipsum dolor"
-    />,
+    <Spotify src="https://open.spotify.com/embed/artist/0hEurMDQu99nJRq8pTxO14" />,
+    <Spotify src="https://open.spotify.com/embed/artist/0hEurMDQu99nJRq8pTxO14" />,
   ];
 
   // Logic
@@ -64,7 +56,7 @@ function Carousel(props) {
   // Content
   return (
     <div id={props.id}>
-      <h2>{data.titles.section3}</h2>
+      <h2>{props.title}</h2>
       <Wrapper>
         {carouselArray.map((item, index) => {
           return (
@@ -83,8 +75,9 @@ function Carousel(props) {
           <i className="fas fa-chevron-right" style={{ fontSize: 20 }}></i>
         </CarouselButton>
       </Wrapper>
+      <Flex>
+        <Dots />
+      </Flex>
     </div>
   );
 }
-
-export default Carousel;
