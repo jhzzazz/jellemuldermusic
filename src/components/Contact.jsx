@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { data } from "../data/data";
-import {FacebookIcon, InstagramIcon, MailIcon} from "./Icons"
+import {FacebookIcon, InstagramIcon, MailIcon, SpotifyIcon, YoutubeIcon} from "./Icons"
 const SocialIcon = styled.a`
   margin: 20px 20px 50px 20px;
   padding: 0;
@@ -10,12 +10,11 @@ const SocialIcon = styled.a`
 `
 
 export let Contact = (props) => (
-  <div className={data.titles.section4}>
+  <div className={data.titles.section5} >
     <h2>{data.titles.section5}</h2>
-    <p>{data.contactinfo.email}</p>
 
     {/* facebook */}
-    <div className="flex-container">
+    <div className="flex-container"style={{display:'flex'}}>
       <SocialIcon href={data.contactinfo.facebook} target="blank">
         <FacebookIcon/>
       </SocialIcon>
@@ -28,6 +27,13 @@ export let Contact = (props) => (
       {/* email */}
       <SocialIcon href={"mailto:" + data.contactinfo.email} target="blank">
       <MailIcon/>
+      </SocialIcon>
+
+      <SocialIcon href={data.contactinfo.spotify} target="blank">
+        <SpotifyIcon/>
+      </SocialIcon>
+      <SocialIcon href={data.contactinfo.youtube} target="blank">
+        <YoutubeIcon/>
       </SocialIcon>
     </div>
   </div>

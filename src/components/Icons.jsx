@@ -13,3 +13,9 @@ export let MailIcon = () =>(
 export let Dots = () =>(
   <i class="fas fa-ellipsis-h"></i>
 );
+export let SpotifyIcon = () =>(
+  <i class="fab fa-spotify"></i>
+);
+export let YoutubeIcon = () =>(
+<i class="fab fa-youtube"></i>
+);

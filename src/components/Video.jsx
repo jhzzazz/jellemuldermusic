@@ -29,7 +29,6 @@ const Iframe = styled.iframe`
 
 let Video = (props) => (
   <div>
-    <h2>{props.id}</h2>
     <Flex>
       <Wrapper>
         <Iframe

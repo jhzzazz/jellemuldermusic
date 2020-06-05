@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import styled  from "styled-components";
+import styled from "styled-components";
 import { data } from "../data/data";
 
 const MenuButton = styled.button`
@@ -40,13 +40,14 @@ const MenuItem = styled.li`
   font-size: 1.2rem;
   opacity: 1;
   font-family: ${data.fonts.prim};
+  :hover{
+    cursor:pointer;
+  }
 `;
 
 const I = styled.i`
-  font-size:20px;
+  font-size: 20px;
 `;
-
-
 
 export let Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,7 @@ export let Menu = () => {
         }}
       >
         <Link
-          to="Banner"
+          to="App"
           activeClass="active"
           spy={true}
           smooth={true}
@@ -72,17 +73,7 @@ export let Menu = () => {
         >
           <MenuItem className="link">{data.titles.siteTitle}</MenuItem>
         </Link>
-        <Link
-          to={data.titles.section1}
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-40}
-          duration={300}
-          onClick={toggle}
-        >
-          <MenuItem className="link">{data.titles.section1}</MenuItem>
-        </Link>
+
         <Link
           activeClass="active"
           to={data.titles.section2}

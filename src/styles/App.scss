@@ -12,6 +12,10 @@ button{
   outline: none;
   border: none;
 }
+.App{
+  max-width:1200px;
+  margin:auto;
+}
 
 
 // imports
@@ -27,8 +31,8 @@ li {
 h1,
 h2,
 h3 {
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+  color: #444444;
   text-align: center;
 }
 h1 {
@@ -36,7 +40,7 @@ h1 {
 }
 h2,
 p ,a{
-  color: #ffffff;
+  color: #444444;
   text-align: center;
   padding: 0.5rem;
   max-width: 600px;
@@ -50,7 +54,7 @@ h3 {
   font-size: 1.5rem;
 }
 h5 {
-  color: #ffffff;
+  color: #444;
 }
 
 p,
@@ -66,22 +70,22 @@ h4 {
 
 // Top level styling
 
-.App {
-  background: #000000
-  // background: #fff
-}
 
 .flex-container {
-  display: flex;
-  justify-content: center;
+  
+  @media screen and (min-width:1000px){
+    
+    display: flex;
+  }
   width: 100%;
-  // align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .active .link{
-  border: 1px solid #FEC52E;
+
 }
 i{
   font-size: 25px;
-  color: #fff;
+  color: #444;
 }

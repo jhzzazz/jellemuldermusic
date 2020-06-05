@@ -1,3 +1,5 @@
+import { YoutubeIcon } from "../components/Icons";
+
 // colors
 export let data = {
   colors: {
@@ -11,16 +13,14 @@ export let data = {
     darkGrey: "#333",
   },
   fonts: {
-    prim: "'Quicksand', sans-serif;",
+    prim: "'Anton', sans-serif;",
     Sec: "'Quicksand', sans-serif;",
   },
   titles: {
     siteTitle: "Jelle Mulder",
-    slogan: "Some slogan",
-    section1: "Bio",
-    section2: "Muziek",
-    section3: "Instagram",
-    section4: "Video",
+    section2: "Instagram",
+    section3: "Spotify",
+    section4: "Youtube",
     section5: "Contact",
   },
   imgpath: {
@@ -44,5 +44,7 @@ export let data = {
     email: "info@jellemuldermusic.com",
     facebook: "https://www.facebook.com/jelle.mulder.75",
     instagram: "https://www.instagram.com/mulder_jelle/",
+    spotify:"https://open.spotify.com/artist/5PjnIsoCvXQSM5Jtf77PdJ?si=1J2Na65VSru8nKGyrv9Daw",
+    youtube:"https://www.youtube.com/channel/UCpfkX1C_8avwNFm08mE1YQg"
   },
 };

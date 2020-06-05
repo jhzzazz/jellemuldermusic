@@ -5,6 +5,9 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 78.94%;
+  @media screen and (min-width: 600px) {
+    min-width: 600px;
+  }
   /* border: 1px solid black; */
 
 `;
