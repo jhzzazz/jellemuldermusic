@@ -42,7 +42,7 @@ export let data = {
   },
   contactinfo: {
     email: "info@jellemuldermusic.com",
-    facebook: "https://www.facebook.com/jelle.mulder.75",
+    facebook: "https://www.facebook.com/Jelle-Mulder-111193260408830",
     instagram: "https://www.instagram.com/mulder_jelle/",
     spotify:"https://open.spotify.com/artist/5PjnIsoCvXQSM5Jtf77PdJ?si=1J2Na65VSru8nKGyrv9Daw",
     youtube:"https://www.youtube.com/channel/UCpfkX1C_8avwNFm08mE1YQg"

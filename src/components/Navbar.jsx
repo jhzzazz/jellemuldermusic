@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width:600px;
   display:flex;
-  justify-content:center;
+  justify-content:space-evenly;
   /* positioning */
   left: 50%;
   transform: translateX(-50%);
@@ -27,16 +27,16 @@ const Title = styled.h1`
   min-width:fit-content;
 `;
 const SocialIcon = styled.a`
-  margin: 10px;
+  margin: 5px;
   padding: 0;
   background: none;
   border: none;
-  width:fit-content
+  width:fit-content;
 `
 
 const Iconcontainer = styled.div`
 display:flex;
-justify-content:center;
+justify-content:flex-end;
 align-items: center;
 padding:0 8px;
 `
@@ -56,14 +56,12 @@ export let Navbar = (props) => (
       </SocialIcon>
 
       {/* Instagram */}
-      <SocialIcon href={data.contactinfo.facebook} target="blank">
+      <SocialIcon href={data.contactinfo.instagram} target="blank">
         <InstagramIcon/>
       </SocialIcon>
 
       {/* email */}
-      <SocialIcon href={"mailto:" + data.contactinfo.email} target="blank">
-      <MailIcon/>
-      </SocialIcon>
+
     </Iconcontainer>
   </Wrapper>
 );

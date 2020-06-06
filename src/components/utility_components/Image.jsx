@@ -9,7 +9,7 @@ let FlexContainer = styled.div`
 export let Image = (props) => (
 <div>
 <FlexContainer id={props.id}>
-  <img src={props.src} alt="logo" style={{width:80+ "%"}} />
+  <img src={props.src} alt="logo" style={{width:80+ "%", height:80+ "%"}} />
 </FlexContainer>
 </div>
 

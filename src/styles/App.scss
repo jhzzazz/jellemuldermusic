@@ -13,6 +13,7 @@ button{
   border: none;
 }
 .App{
+  min-width:320px;
   max-width:1200px;
   margin:auto;
 }
@@ -67,7 +68,9 @@ h4 {
   max-width: 60px;
   max-height: 60px;
 }
-
+img{
+  max-height:100%;
+}
 // Top level styling
 
 
